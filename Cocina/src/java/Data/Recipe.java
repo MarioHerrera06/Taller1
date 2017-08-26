@@ -17,7 +17,11 @@ public class Recipe {
     private ArrayList<String> Preparation;
     private  int cookingTime;
 
-    public Recipe(){}
+    public Recipe()
+        {
+        ingredients=new ArrayList<>();
+        Preparation=new ArrayList<>();
+        }
     
     public String getName() {
         return name;

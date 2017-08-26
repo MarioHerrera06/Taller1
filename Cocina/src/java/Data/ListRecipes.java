@@ -14,6 +14,9 @@ import java.util.ArrayList;
 public class ListRecipes {
     public static ArrayList<Recipe> listRecipes;
     
-    
+    public ListRecipes()
+        {
+        listRecipes=new ArrayList<>();
+        }
     
 }
