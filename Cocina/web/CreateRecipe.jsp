@@ -23,19 +23,21 @@
                 <input type="text" placeholder="Name Recipe" name="nameRecipe"><br>
                 <label><strong>Ingredients</strong></label><br>
                 <%
-                for (Ingredient ingredient :AddIngredient.ingredients ) {
-                        %>
-                    <input type="checkbox" name="ingredient" value="tomate"><%=ingredient.getName()%><br>
+                for (int i=0;i<AddIngredient.ingredients.size();i++ ) {
+                    Ingredient ingredient=AddIngredient.ingredients.get(i);
+                %>
+                    <input type="checkbox" name="ingredient" value="<%=i%>"><%=ingredient.getName()%><br>
                     
                     <%
                     }
                 %>
                 <label><strong>Preparation :</strong></label><br>
-                <textarea rows="30" cols="82" data-toggle="tooltip" data-placement="data-toggle"></textarea><br>
+                <textarea rows="30" cols="82" data-toggle="tooltip" data-placement="data-toggle" name="preparation"></textarea><br>
                 <label><strong>Coocking Time:</strong></label><br>
                 <input type="number" name="coockingTime" value="coocking time"><br>
                 <button type="submit">submit</button>
             </form>
+                <a href="index.jsp">index</a>     
         </section>
     </body>
 </html>

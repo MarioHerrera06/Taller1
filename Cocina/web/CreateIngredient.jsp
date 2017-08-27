@@ -12,13 +12,14 @@
         <title>Create Ingredient</title>
     </head>
     <body>
-        <section>
+        <section class="CreateRecipe_section">
             <h1>Create ingredient</h1>
             <label><strong>Name ingredient:</strong></label>
             <form action="AddIngredient" method="post">
                 <input type="text" placeholder="Name" name="ingredient">
                 <button type="submit">submit</button>
             </form>
+        <a href="index.jsp">index</a> 
         </section>
     </body>
 </html>
