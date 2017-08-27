@@ -5,6 +5,7 @@
  */
 package Servlets;
 
+import Data.Ingredient;
 import Data.Recipe;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -34,18 +35,7 @@ public class AddRecipe extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet AddRecipe</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet AddRecipe at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+        response.sendRedirect("CreateRecipe.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -72,9 +62,17 @@ public class AddRecipe extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        System.out.println(request.getParameter("ingredient"));
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
+        Recipe recipe=new Recipe();
+        recipe.setName(request.getParameter("nameRecipe"));
+        String s[]=request.getParameterValues("ingredient");
+        ArrayList<Ingredient> ingredient=new ArrayList<>();
+        for (String string : s) {
+            ingredient.add(AddIngredient.ingredients.get(Integer.valueOf(string)));
+        }
+        recipe.setPreparation(request.getParameter("preparation"));
+        recipe.setCookingTime(Integer.valueOf(request.getParameter("coockingTime")));
+        AddRecipe.recipes.add(recipe);
         processRequest(request, response);
     }
 
