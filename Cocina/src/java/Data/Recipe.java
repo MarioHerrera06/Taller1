@@ -14,13 +14,12 @@ import java.util.ArrayList;
 public class Recipe {
     private String name;
     private ArrayList<Ingredient> ingredients;
-    private ArrayList<String> Preparation;
+    private String preparation;
     private  int cookingTime;
 
     public Recipe()
         {
         ingredients=new ArrayList<>();
-        Preparation=new ArrayList<>();
         }
     
     public String getName() {
@@ -39,12 +38,12 @@ public class Recipe {
         this.ingredients = ingredients;
     }
 
-    public ArrayList<String> getPreparation() {
-        return Preparation;
+    public String getPreparation() {
+        return preparation;
     }
 
-    public void setPreparation(ArrayList<String> Preparation) {
-        this.Preparation = Preparation;
+    public void setPreparation(String Preparation) {
+        this.preparation = Preparation;
     }
 
     public int getCookingTime() {
