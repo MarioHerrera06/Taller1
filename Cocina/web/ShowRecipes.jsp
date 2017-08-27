@@ -16,7 +16,7 @@
     <body>
         <h1 class="ShowRecipes_titulo">Show Recipes</h1>
         <div>
-            <%="Hola mundo" %>                          
+            <%="Hola mundo mundial" %>                          
         </div>
         
         
