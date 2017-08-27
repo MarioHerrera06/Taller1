@@ -7,4 +7,42 @@ and open the template in the editor.
     Created on : 23-ago-2017, 20:29:33
     Author     : stiven
 */
+/*
+css createRecipe.jsp
+*/
 
+.CreateRecipe_section
+{
+    width:60%;
+    height: 100%;
+    margin-left: 20%;
+    
+}
+    .CreateRecipe_section h1
+    {
+        width: 20%;
+        margin-left:40%;
+    }
+    .CreateRecipe_section form
+    {
+        width: 80%;
+        height: 80%;
+        margin-left: 10%;
+    }
+    
+    .CreateRecipe_section label
+    {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .CreateRecipe_section input[type=text],input[type=number],input[type=checkbox]
+    {
+        border: 1px solid black;
+    }
+    .CreateRecipe_section button
+    {
+        border: 2px solid black;
+        width: 20%;
+        margin-left: 40%;
+        height: 20px;
+    }
