@@ -15,8 +15,54 @@
         <title>Create Recipe</title>
         <link rel="stylesheet" href="Css/style.css">
     </head>
+    
+    
+    
+    <style>
+     header{
+     background-color: #ff6600; 
+    color: #FBFFF1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+
+     }
+     
+     
+     
+div.containerff{
+		width: 500px;
+		height: 500px;
+		text-align: center;
+		margin: 0 auto;
+	        background-color: #4d4d4d;
+	        margin-top:150px;
+	        border-radius: 4px;
+     
+	
+}
+footer {
+      background-color: #ff6600;
+      padding: 25px;
+      margin-top:150px;
+       width: 100%;
+    height: 15%;
+      
+    }
+     
+     
+        </style>
+        <header>
+            <h1>Create recipe</h1>
+        </header>
+        
+        
     <body>
+        <div class="containerff">
         <section class="CreateRecipe_section">
+              
             <h1 >Create Recipe</h1>
             <form action="AddRecipe" method="post">
                 <label><strong>Name Recipe:</strong></label><br>
@@ -32,12 +78,18 @@
                     }
                 %>
                 <label><strong>Preparation :</strong></label><br>
-                <textarea rows="30" cols="82" data-toggle="tooltip" data-placement="data-toggle" name="preparation"></textarea><br>
+                <textarea rows="10" cols="60" data-toggle="tooltip" data-placement="data-toggle" name="preparation"></textarea><br>
                 <label><strong>Coocking Time:</strong></label><br>
                 <input type="number" name="coockingTime" value="coocking time"><br>
                 <button type="submit">submit</button>
             </form>
-                <a href="index.jsp">index</a>     
+                <a href="index.jsp">index</a>
+               
         </section>
+                  </div>
     </body>
+    
+<footer class="container-fluid text-center">
+  
+</footer>
 </html>
