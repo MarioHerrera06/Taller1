@@ -1,0 +1,44 @@
+
+/* 
+Module 4, show recipes
+*/
+
+.ShowRecipes_titulo{
+    position: absolute;
+    left: 45%;
+}
+
+.formShowRecipes{
+    position: absolute;
+    left: 47.5%;
+    top: 17%;
+}
+
+.TitleRecipes{
+    color: red;
+    position: absolute;
+    left: 45%;
+}
+
+table {
+    border-collapse: collapse;
+    position: absolute;
+    left: 47%;
+    top: 17%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+#link4{
+    text-decoration: none;
+    position: absolute;
+    top: 80%; 
+    left: 5%;
+    color: black;
+}
+
+#link4:hover{
+    color: red;
+}
