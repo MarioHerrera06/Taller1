@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class Recipe {
     private String name;
     private ArrayList<Ingredient> ingredients;
-    private ArrayList<String> Preparation;
+    private String Preparation;
     private  int cookingTime;
 
     public Recipe(){}
@@ -35,11 +35,11 @@ public class Recipe {
         this.ingredients = ingredients;
     }
 
-    public ArrayList<String> getPreparation() {
+    public  String getPreparation() {
         return Preparation;
     }
 
-    public void setPreparation(ArrayList<String> Preparation) {
+    public void setPreparation(String Preparation) {
         this.Preparation = Preparation;
     }
 
