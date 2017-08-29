@@ -1,6 +1,6 @@
 <%-- 
     Document   : ingredientList
-    Created on : 23/08/2017, 08:53:05 PM
+    Created on : 28/08/2017, 08:24:36 PM
     Author     : usuario
 --%>
 
@@ -9,19 +9,37 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="Css/style.css">
-        <title></title>
+        <title>JSP Page</title>
     </head>
     <body>
-        
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+
+        <h1>Search Recipes by Ingredient</h1>
         <form>
-            <h1 class="module_3_title">Show recipes by ingredients</h1>
-            <br><br><br><br>
-            <br><br><br><br>
-            Enter ingredient:
-            <input type="text" name="txtIngredient">
-            <input type="button" name="btnSearch" value="Search"><br>
+            Enter ingredient<input type="text" name="txtIngredient">
+            <input type="button" name="btnSearch" value="Search">
         </form>
+        <table>
+            <tr>
+                <th>Ingredient</th>
+                <th>Recipe</th>
+            </tr>
+        </table>
     </body>
-    
 </html>
