@@ -7,4 +7,29 @@ and open the template in the editor.
     Created on : 23-ago-2017, 20:29:33
     Author     : stiven
 */
-
+/**Modulo 2**/
+.module_2_title{
+    color:blue;
+    position:absolute;
+    left:500px;   
+   }   
+.module_2_form{
+    position:absolute;
+    left:600px;
+    top:25%;
+   }
+   .table_mod_2{
+    position:absolute;
+    left:0;
+    top:25%;
+    border-collapse: collapse;
+    width: 100%;
+   }
+   .tr_mod_2:hover {background-color: #f5f5f5}
+   
+   .th_mod_2,.td_mod_2{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+  

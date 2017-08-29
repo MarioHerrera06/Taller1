@@ -76,7 +76,7 @@ footer {
                     
                     <%
                     }
-                %>
+%>
                 <label><strong>Preparation :</strong></label><br>
                 <textarea rows="10" cols="60" data-toggle="tooltip" data-placement="data-toggle" name="preparation"></textarea><br>
                 <label><strong>Coocking Time:</strong></label><br>
